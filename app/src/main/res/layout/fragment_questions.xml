@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myblue">
+
+        <Button
+            android:id="@+id/btnProximo"
+            android:layout_width="295dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#088074"
+            android:text="Proximo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnOpcoes"
+            app:layout_constraintVertical_bias="0.344" />
+
+        <TextView
+            android:id="@+id/txtPergunta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pergunta"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.122" />
+
+        <RadioGroup
+            android:id="@+id/btnOpcoes"
+            android:layout_width="378dp"
+            android:layout_height="228dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPergunta"
+            app:layout_constraintVertical_bias="0.227">
+
+            <RadioButton
+                android:id="@+id/txtRes1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta 1"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/txtRes2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta 2"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/txtRes3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta 3"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/txtRes4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta 4"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/contagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
