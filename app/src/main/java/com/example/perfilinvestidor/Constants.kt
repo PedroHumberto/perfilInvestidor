@@ -15,6 +15,7 @@ object Constants {
             "Entre 6 meses e 1 ano",
             "Entre 1 ano e 3 anos",
             "Acima de 3 anos",
+            null
         )
         listaPerguntas.add(q1)
 
@@ -26,7 +27,9 @@ object Constants {
             "Aumento gradual do capital ao longo do tempo, assumindo riscos moderados",
             "Aumento do capital acima da taxa de retorno média do mercado, mesmo que isso implique assumir riscos de perdas elevadas",
             "Obter no curto prazo retornos elevados e significativamente  acima da taxa de retorno média do mercado, assumindo riscos elevados",
+            null
         )
+
         listaPerguntas.add(q2)
 
         val q3 = Perguntas(
@@ -36,6 +39,7 @@ object Constants {
             "Possuo formação acadêmica na área financeira, mas não tenho experiência com o mercado financeiro",
             "Possuo formação acadêmica em outra área, mas possuo conhecimento do mercado financeiro",
             "Possuo formação acadêmica na área financeira ou pleno conhecimento do mercado financeiro",
+            null
         )
         listaPerguntas.add(q3)
 
@@ -46,6 +50,7 @@ object Constants {
             "Entre 25,01 e 50%",
             "Acima de 50%",
             null,
+            null
         )
         listaPerguntas.add(q4)
 
@@ -56,6 +61,7 @@ object Constants {
             "Manteria aplicação aguardando uma melhora do mercado ",
             "Aumentaria a aplicação para aproveitar as oportunidades do mercado",
             null,
+            null
         )
         listaPerguntas.add(q5)
 
@@ -66,18 +72,42 @@ object Constants {
             "Menos de 25% em renda variável e o restante em renda fixa e/ou imóveis",
             "Entre 25,01 e 50% aplicado em renda variável e o restante em renda fixa e/ou imóveis",
             "Acima de 50% em renda variável",
+            null
         )
         listaPerguntas.add(q6)
 
         val q7 = Perguntas(
             7,
-            "7. Em relação as aplicações e rendimentos, em qual dessas situações você se enquadra? ",
+            "Em relação as aplicações e rendimentos, em qual dessas situações você se enquadra? ",
             "Conto com o rendimento dessas aplicações para complementar minha renda mensal ",
             "Eventualmente posso resgatar parte das aplicações para fazer frente aos meus gastos. Contudo, não tenho intenção de resgatar no curto prazo e pretendo fazer aplicações regulares",
             "Não tenho intenção de resgatar no curto prazo, mas não pretendo realizar novas aplicações",
             "Não tenho intenção de resgatar no curto prazo e ainda pretendo fazer aplicações regulares",
+            null
         )
         listaPerguntas.add(q7)
+
+        val q8 = Perguntas(
+            8,
+            " Qual sua faixa de renda mensal média?",
+            "Até R$ 1.000",
+            "De R$ 1.001 até R$ 5.000",
+            "De R$ 5.001 até R$ 10.000",
+            " Acima de R$ 10.000",
+            null
+        )
+        listaPerguntas.add(q8)
+
+        val q9 = Perguntas(
+            9,
+            "Qual o valor aproximado do seu patrimônio?",
+            "Até R$ 10.000",
+            "De R$ 10.001 até R$ 100.000",
+            "De R$ 100.001 até R$ 500.000",
+            "De R$ 500.001 até R$ 1.000.000",
+            "Acima de R$ 1.000.001"
+        )
+        listaPerguntas.add(q9)
 
 
 

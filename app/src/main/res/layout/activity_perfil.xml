@@ -8,29 +8,16 @@
     tools:context=".Perfil">
 
     <TextView
-        android:id="@+id/text_nome"
-        android:layout_width="198dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="92dp"
-        android:text="NOME"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:textSize="26sp" />
-
-    <TextView
         android:id="@+id/txt_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PERFIL DE INVESTIDOR"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_nome"
-        app:layout_constraintVertical_bias="0.231"
-        tools:textSize="20sp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="30sp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,24 +9,29 @@ class Perfil : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil)
 
-        var nome = findViewById<TextView>(R.id.text_nome)
         var resultado = findViewById<TextView>(R.id.txt_resultado)
-        var perfil = intent.extras?.getString("NOME_USUARIO")
+
         var pontos = intent.extras?.getInt("PONTOS")
 
-        nome.text = "Bem Vindo ${perfil}"
 
 
-        if(pontos === 7){
+        resultado.text = perfilInvestidor(pontos!!)
+        resultado.textSize = 26f
 
-            resultado.text = "parabens"
+    }
 
-
+    private fun perfilInvestidor(pontos: Int): String? {
+        var meuPerfil: String? = null
+        if(pontos!! <= 12){
+          meuPerfil = "Seu perfil é Conservador"
         }
-
-
-
-
+        else if(pontos!! > 12 && pontos!! <= 29){
+            meuPerfil = "Seu Perfil é Moderado"
+        }
+        else if(pontos!! >= 30){
+            meuPerfil = "Seu Perfil é Arrojado"
+        }
+        return meuPerfil
     }
 }
 

@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tp3.QuestionsFragment
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         val buttonInit = findViewById<Button>(R.id.btnInit)
         val getName = findViewById<TextView>(R.id.lblName)
 
-        val aviso = findViewById<TextView>(R.id.log_aviso)
 
         buttonInit.setOnClickListener {
 
@@ -27,8 +26,6 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Digite seu nome", Toast.LENGTH_LONG).show()
             }else{
                 val initIntent = Intent(this, Questions::class.java)
-
-                initIntent.putExtra("NOME_USUARIO", "Pedro")
                 startActivity(initIntent)
             }
         }

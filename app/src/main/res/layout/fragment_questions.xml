@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".QuestionsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -41,8 +41,8 @@
 
         <RadioGroup
             android:id="@+id/btnOpcoes"
-            android:layout_width="378dp"
-            android:layout_height="228dp"
+            android:layout_width="388dp"
+            android:layout_height="314dp"
             android:layout_marginBottom="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -55,6 +55,7 @@
                 android:id="@+id/txtRes1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="Resposta 1"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
@@ -64,6 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Resposta 2"
+                android:layout_marginBottom="10dp"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
 
@@ -72,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Resposta 3"
+                android:layout_marginBottom="10dp"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
 
@@ -80,17 +83,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Resposta 4"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/txtRes5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta 5"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
         </RadioGroup>
-
-        <TextView
-            android:id="@+id/contagem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="91dp"
-            tools:layout_editor_absoluteY="28dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
