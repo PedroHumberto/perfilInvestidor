@@ -1,6 +1,9 @@
 # Perfil de Investidor
 
-*Trabalho feito para faculdade de Analise e Desenvolvimento de sistemas.*
+
+*Trabalho feito para faculdade de Analise e Desenvolvimento de sistemas.
+Metodologia adaptada do questionário do Banco Paulista
+*
 
 Este programa é para analise de perfil de investidor através de um questionario, cada resposta vale pontos.
 
